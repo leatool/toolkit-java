@@ -4,4 +4,6 @@ package com.leatool;
  * 作者：刘佳伟
  */
 public class CreateIdKit {
+
+
 }
