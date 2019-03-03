@@ -8,19 +8,14 @@ import org.junit.Test;
  */
 public class CreateIdKit {
 
-    public static void main(String[] agrs){
-        System.out.println("haha");
-
-//        System.out.println(Math.random());
-    }
-
-    public long getLongId(){
+    /**
+     * 返回一个以时间戳和三位随机数的主键ID
+     * @return
+     */
+    public static long getDateTimeId() {
         long resultLongId = 0;
         long time = System.currentTimeMillis();
-        String date = TimeKit.getNowDateTimeStr("yyyyMMddhhmmss");
-
-
-        return resultLongId;
+        return resultLongId = Long.valueOf(time + "" + Math.round(Math.random() * 1000));
     }
 
 }
